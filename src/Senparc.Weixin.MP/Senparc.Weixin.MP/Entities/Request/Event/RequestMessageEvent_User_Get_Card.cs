@@ -35,6 +35,9 @@ Detail: https://github.com/JeffreySu/WeiXinMPSDK/blob/master/license.md
 
     修改标识：hello2008zj - 20160428
     修改描述：v13.7.7 添加IsRestoreMemberCard及OldUserCardCode字段。
+
+    修改标识：Senparc - 20180116
+    修改描述：v16.6.7 RequestMessageEvent_User_Get_Card 添加 UnionId 属性
 ----------------------------------------------------------------*/
 
 namespace Senparc.Weixin.MP.Entities
@@ -89,15 +92,12 @@ namespace Senparc.Weixin.MP.Entities
         /// </summary>
         public string OuterStr { get; set; }
         /// <summary>
-        /// 用户删除会员卡后可重新找回，当用户本次操作为找回时，该值为1，否则为0
-        /// </summary>
-        public int IsRecommendByFriend { get; set; }
-        /// <summary>
-        /// 领取者UnionId
+        /// 领券用户的UnionId
         /// </summary>
         public string UnionId { get; set; }
+
         ///以下两个待验证
-        //
+        //public int IsRecommendByFriend { get; set; }
         //public string SourceScene { get; set;}
     }
 }
