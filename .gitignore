@@ -86,3 +86,8 @@ packages/
 /Samples/netcore3.0-mvc/Senparc.Weixin.Sample.NetCore3/App_Data/QrCode
 /src/Senparc.Weixin.Cache/Senparc.Weixin.Cache.Redis.Tests/App_Data/SenparcTraceLog
 /Samples/netcore3.0-mvc/Senparc.Weixin.Sample.NetCore3/appsettings.Development.json
+/Samples/netcore3.0-mvc/Senparc.Weixin.Sample.NetCore3/App_Data/WeChat_OfficialAccount
+/Samples/netcore3.0-mvc/.idea
+/Samples/net6-mvc/Senparc.Weixin.Sample.Net6/App_Data/SenparcTraceLog
+/Samples/net6-mvc/Senparc.Weixin.Sample.Net6/App_Data/WeChat_OfficialAccount
+/src/BuildOutPut

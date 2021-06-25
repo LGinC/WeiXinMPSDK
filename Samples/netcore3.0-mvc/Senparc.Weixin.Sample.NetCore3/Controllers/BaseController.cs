@@ -1,5 +1,5 @@
 ﻿/*----------------------------------------------------------------
-    Copyright (C) 2020 Senparc
+    Copyright (C) 2021 Senparc
     
     文件名：BaseController.cs
     文件功能描述：Controller基类
@@ -26,7 +26,7 @@ namespace Senparc.Weixin.Sample.NetCore3.Controllers
         {
             get
             {
-                return Config.SenparcWeixinSetting.WeixinAppId;//与微信公众账号后台的AppId设置保持一致，区分大小写。
+                return Senparc.Weixin.Config.SenparcWeixinSetting.WeixinAppId;//与微信公众账号后台的AppId设置保持一致，区分大小写。
             }
         }
 

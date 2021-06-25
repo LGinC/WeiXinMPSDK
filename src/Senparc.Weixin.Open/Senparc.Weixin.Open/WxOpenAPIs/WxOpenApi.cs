@@ -1,7 +1,7 @@
 ﻿#region Apache License Version 2.0
 /*----------------------------------------------------------------
 
-Copyright 2020 Jeffrey Su & Suzhou Senparc Network Technology Co.,Ltd.
+Copyright 2021 Jeffrey Su & Suzhou Senparc Network Technology Co.,Ltd.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
 except in compliance with the License. You may obtain a copy of the License at
@@ -19,7 +19,7 @@ Detail: https://github.com/JeffreySu/WeiXinMPSDK/blob/master/license.md
 #endregion Apache License Version 2.0
 
 /*----------------------------------------------------------------
-    Copyright (C) 2020 Senparc
+    Copyright (C) 2021 Senparc
     
     文件名：WxOpenApi.cs
     文件功能描述：微信小程序 API
@@ -97,7 +97,7 @@ namespace Senparc.Weixin.Open.WxOpenAPIs
         /// <param name="addCategoryData">添加类目参数</param>
         /// <returns></returns>
         [ApiBind(NeuChar.PlatformType.WeChat_Open, "WxOpenApi.AddCategory", true)]
-        public static WxJsonResult AddCategory(string accessToken, IList<AddCategoryData> addCategoryData)
+        public static WxJsonResult AddCategory(string accessToken, List<AddCategoryData> addCategoryData)
         {
             var url = $"{Config.ApiMpHost}/cgi-bin/wxopen/addcategory?access_token={accessToken.AsUrlData()}";
             var data = new
@@ -149,7 +149,7 @@ namespace Senparc.Weixin.Open.WxOpenAPIs
         /// <returns></returns>
         [ApiBind(NeuChar.PlatformType.WeChat_Open, "WxOpenApi.ModifyCategory", true)]
         public static WxJsonResult ModifyCategory(string accessToken, int first, int second,
-            IList<KeyValuePair<string, string>> certicates)
+            List<KeyValuePair<string, string>> certicates)
         {
             var url = $"{Config.ApiMpHost}/cgi-bin/wxopen/modifycategory?access_token={accessToken.AsUrlData()}";
             var data = new
@@ -189,7 +189,7 @@ namespace Senparc.Weixin.Open.WxOpenAPIs
         /// <param name="addCategoryData">添加类目参数</param>
         /// <returns></returns>
         [ApiBind(NeuChar.PlatformType.WeChat_Open, "WxOpenApi.AddCategoryAsync", true)]
-        public static async Task<WxJsonResult> AddCategoryAsync(string accessToken, IList<AddCategoryData> addCategoryData)
+        public static async Task<WxJsonResult> AddCategoryAsync(string accessToken, List<AddCategoryData> addCategoryData)
         {
             var url = $"{Config.ApiMpHost}/cgi-bin/wxopen/addcategory?access_token={accessToken.AsUrlData()}";
             var data = new
@@ -242,7 +242,7 @@ namespace Senparc.Weixin.Open.WxOpenAPIs
         /// <returns></returns>
         [ApiBind(NeuChar.PlatformType.WeChat_Open, "WxOpenApi.ModifyCategoryAsync", true)]
         public static async Task<WxJsonResult> ModifyCategoryAsync(string accessToken, int first, int second,
-            IList<KeyValuePair<string, string>> certicates)
+            List<KeyValuePair<string, string>> certicates)
         {
             var url = $"{Config.ApiMpHost}/cgi-bin/wxopen/modifycategory?access_token={accessToken.AsUrlData()}";
             var data = new
